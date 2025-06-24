@@ -87,12 +87,11 @@ h1.contact-section {
   width: auto;
   height: 30px;
 }
-
-.johnny-contact {
-  width: auto;
-  height: 300px;
-}
 /*! Change this later !*/
+
+picture > img {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
 
 /*TODO: Use this later?*/
 /* .star-symbol {
@@ -104,12 +103,6 @@ h1.contact-section {
   footer {
     flex-direction: column;
     padding: 1rem;
-  }
-
-  .johnny-contact {
-    max-width: 100%;
-    height: auto;
-    display: block;
   }
 }
 /* 
