@@ -46,11 +46,17 @@
           />
         </div>
       </section>
-      <img
-        class="johnny-contact"
-        src="./img/Johnny_Joestar_Contact.jpg"
-        alt="Johnny Joestar"
-      />
+      <picture>
+        <source
+          media="(max-width:700px)"
+          srcset="./img/Johnny_Joestar_Cropped.jpeg"
+        />
+        <img
+          src="./img/Johnny_Joestar_Contact.jpg"
+          alt="Johnny Joestar in Contact pose"
+          style="max-width: 100%; height: auto"
+        />
+      </picture>
     </footer>
   </body>
 </html>
