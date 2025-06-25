@@ -58,41 +58,53 @@ header {
   align-items: center;
   /*! Delete this later !*/
 }
-/*!~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~!*/
 
-/*!~~~~~~~~~~~~~ Main-Content ~~~~~~~~~~~~~!*/
-.header-content-wrapper {
-  position: relative;
+.img-container {
+  position: absolute;
+  height: auto;
+  width: 400px;
+  margin-left: -27rem;
   display: flex;
-  z-index: 8;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
+.araki {
+  bottom: 0;
+  color: white;
+}
+
 .img-container > img {
-  width: 400px;
-  height: auto;
-  position: relative;
-  z-index: 1;
   box-shadow: var(--Shadow);
 }
 
-.header-content {
-  flex: 0 1 400px;
-  height: 250px;
-  padding: 2rem;
-  padding-bottom: 1.5rem;
+.araki {
+  position: absolute;
+}
+
+.header-content-wrapper > .icon {
+  margin-bottom: -10px;
+  align-self: flex-end;
+}
+
+.header-content-wrapper {
   background-color: white;
-  box-shadow: var(--Shadow);
+  position: relative;
+  z-index: 8;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+
+  height: auto;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  margin-left: 400px;
+  box-shadow: var(--Shadow);
 }
 
-.header-content > .icon {
-  margin-left: auto;
-}
-/*!~~~~~~~~~~~~~ Main-Content ~~~~~~~~~~~~~!*/
+/*!~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~!*/
 
 /*!~~~~~~~~~~~~~ Separators ~~~~~~~~~~~~~!*/
 .separator-white {
