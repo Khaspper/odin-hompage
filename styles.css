@@ -43,8 +43,9 @@ img {
 
 /*!~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~!*/
 
-main {
-  height: 2000px;
+.main-content-header {
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 .work-container {
@@ -54,12 +55,26 @@ main {
   gap: 2rem;
 }
 
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 3.125rem;
+}
+
+@media (max-width: 1000px) {
+  .main-content-wrapper {
+    align-items: center;
+    /* margin: 1rem; */
+  }
+}
+
 /*!~~~~~~~~~~~~~ Main > work-card ~~~~~~~~~~~~~!*/
 .work-card {
   flex: 1 1 0;
   min-width: 350px;
-  max-width: 400px;
-  padding: 8px;
+  max-width: 450px;
+  padding: 0.5rem;
   box-shadow: var(--Shadow);
   /*! Delete This Later !*/
   /* width: 300px; */
@@ -108,6 +123,10 @@ main {
   grid-area: battle-description;
 }
 
+.jojo-name,
+.external-link {
+  margin-top: 0.5rem;
+}
 /*!~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~!*/
 
 .purple-bar {
